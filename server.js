@@ -97,9 +97,9 @@ app.get("/api/docker/*", (req, response) => {
     });
   });
 
-  apiReq.on("error", e => {
-    console.log(`problem with request: ${e.message}`);
-    console.log(e.stack);
+  apiReq.on("error", err => {
+    console.log(`problem with request: ${err.message}`);
+    console.log(err.stack);
   });
 
   req.end();
