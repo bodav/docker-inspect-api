@@ -4,11 +4,13 @@ const http = require("http");
 const https = require("https");
 const morgan = require("morgan");
 const cors = require("cors");
+const healthCheck = require("express-healthcheck");
 
 const app = express();
 
 app.use(morgan("combined"));
 app.use(cors());
+app.use("/health", healthCheck());
 
 let dockerHost = null;
 let dockerPort = null;

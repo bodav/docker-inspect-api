@@ -10,12 +10,13 @@
   "author": "bodav",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bodav/TBA.git"
+    "url": "git+https://github.com/bodav/docker-inspect-api.git"
   },
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1",
+    "express-healthcheck": "^0.1.0",
     "morgan": "^1.9.1"
   },
   "devDependencies": {
