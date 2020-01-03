@@ -102,5 +102,5 @@ app.get("/api/docker/*", (req, response) => {
     console.log(err.stack);
   });
 
-  req.end();
+  apiReq.end();
 });

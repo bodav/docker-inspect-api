@@ -1,4 +1,5 @@
-FROM node:10-buster
+ARG PLATFORM=lts
+FROM node:${PLATFORM}
 
 WORKDIR /app
 COPY package.json /app
