@@ -8,6 +8,8 @@ RUN npm install --production
 
 COPY . /app
 
-HEALTHCHECK --interval=15s CMD curl --fail http://localhost:8080/health || exit 1
+HEALTHCHECK --interval=5m CMD curl --fail http://localhost:8080/health || exit 1
 
 CMD ["npm", "start"]
+
+EXPOSE 8080
